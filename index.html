@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>SketchPad</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner-container">
+        <div class="content">
+          <div class="board"></div>
+
+          <div class="buttons">
+            <div class="topButtons">
+              <button class="reset" onclick="resetBoard()">Reset</button>
+              <button class="changeColor" onclick="toggleColors()">Change Color</button>
+      
+            </div>
+            <div class="setSize">
+              <button onclick="setSize()">Set Size</button>
+              <input class="getSize" type="text" value="16">
+            </div>
+            <div class="warning">Muse be between 2 to 100</div>
+          </div>
+        </div>
+
+        <div class="colors-container">
+          <div class="colors"></div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
