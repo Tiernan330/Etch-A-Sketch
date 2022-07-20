@@ -62,11 +62,11 @@ function resetBoard() {
 
 function colors(){
   let color = document.querySelector(".colors");
-  color.style.gridTemplateColumns = `repeat(${3} , 1fr)`;
-  color.style.gridTemplateRows = `repeat(${3} , 1fr)`;
-  let colorBoard = ["black", "white", "red", "blue", "green", "yellow", "orange", "grey", "pink"]
+  color.style.gridTemplateColumns = `repeat(${4} , 1fr)`;
+  color.style.gridTemplateRows = `repeat(${4} , 1fr)`;
+  let colorBoard = ["black", "white", "red", "blue", "green", "yellow", "orange", "grey", "pink", "purple", "brown", "olive", "cyan", "magenta", "lime", "maroon"]
 
-  for (let i = 0; i < 9; i++) {
+  for (let i = 0; i < 16; i++) {
     let square = document.createElement("div");
     square.textContent = colorBoard[i];
     square.style.color = colorBoard[i];
